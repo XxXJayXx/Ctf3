@@ -6,42 +6,75 @@
     <title>Inspector Challenge - CyberSecImamu</title>
     <link rel="stylesheet" href="style.css"> 
     <style>
-        
+        @keyframes glitch {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Courier New', Courier, monospace;
+            background: black url('https://media2.giphy.com/media/4UzW8S83pWoKs/giphy.gif?cid=6c09b952xsvpp6632xpia2es3jlabbltotk4xy16wius7e04&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: #00ff00;
         }
         .container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ff0000, 0 0 25px #00ff00, 0 0 35px #ff0000;
             padding: 20px;
             max-width: 800px;
             text-align: center;
+            position: relative;
+            animation: glitch 1s infinite;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff0000;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        p {
+            font-size: 1.2em;
+            color: #00ff00;
+            text-shadow: 0 0 10px #ff0000;
         }
         .button {
-            background-color: #007bff;
-            color: white;
+            background-color: #ff0000;
+            color: #00ff00;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.2em;
             margin-top: 20px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: 2px solid #00ff00;
+            display: inline-block;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #00ff00;
+            color: #ff0000;
+            transform: scale(1.1);
         }
         .cybersecimamu {
-            color: #007bff;
+            color: #ff0000;
             font-weight: bold;
             cursor: pointer;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #00ff00;
+        }
+        .cybersecimamu:hover {
+            color: #00ff00;
+            text-shadow: 0 0 10px #ff0000;
         }
     </style>
 </head>
@@ -57,9 +90,6 @@
             <p>Inspector Challenge &copy; 2024 - Presented by <span class="cybersecimamu" onclick="window.open('https://x.com/cybersecimamu?s=21', '_blank')">CyberSecImamu</span></p>
         </footer>
     </div>
-
-    <!-- الجزء الأول من الفلاق -->
-    <!-- ImamuF{owl292_ -->
 
     <script src="script.js"></script> 
 </body>
